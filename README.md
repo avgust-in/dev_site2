@@ -1,5 +1,5 @@
 # dev_site2
-Project for open site in docker
+Project to open site in docker
 
 Use nginx+apahe2+mysql
 
