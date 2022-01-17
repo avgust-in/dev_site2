@@ -37,7 +37,7 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'secret' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', '89.223.125.76:3306' );
+define( 'DB_HOST', 'mysql:3306' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
